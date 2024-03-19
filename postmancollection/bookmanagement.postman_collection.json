@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "c35a09c3-e052-4602-af50-7aec2b6391b9",
+		"name": "bookmanagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23581084",
+		"_collection_link": "https://www.postman.com/docking-module-engineer-11516542/workspace/gaurav-2010993616/collection/23581084-c35a09c3-e052-4602-af50-7aec2b6391b9?action=share&source=collection_link&creator=23581084"
+	},
+	"item": [
+		{
+			"name": "AdminRegister",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserRegister",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin/User Login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin/User Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin/User delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get users",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BorrowBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuyBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RequestBorrowBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBooks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchBook",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWY4YjliOTI4YTgwMjNjNTMyMzIxN2UiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxMDgzNTE5MCwiZXhwIjoxNzEwODM4NzkwfQ.WyQRp4w409bkxhhrXIOiWrkNsVI7cfJY9GfMT5im80s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "mutation RequestToBorrowBook($bookId: ID!, $borrowerId: ID!) { requestToBorrowBook(bookId: $bookId, borrowerId: $borrowerId) { id title author genre } }",
+						"variables": "{\r\n    \"bookId\":\"65f9455eb88b661804db56ab\",\r\n    \"borrowerId\":\"65f8b92928a8023c532327b\"\r\n  }"
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/graphql",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
